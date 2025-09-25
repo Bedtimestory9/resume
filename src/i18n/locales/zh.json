@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于",
+    "experience": "经历",
+    "contact": "联系"
+  },
+  "hero": {
+    "name": "苏浩然",
+    "title": "全栈开发工程师",
+    "description": "热衷于将灵感转化为现实，通过创新解决方案让日常生活更加便利。",
+    "email": "lawrencefandango@gmail.com",
+    "github": "github.com/Bedtimestory9",
+    "phone": "+86 13112231647",
+    "learnMore": "了解更多",
+    "downloadResume": "下载简历"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "全栈开发工程师 & 移动应用专家",
+    "intro": "我是一名充满热情的全栈开发工程师，专精于React Native和跨平台移动开发。我在软件开发领域的探索之路，源于对创造能够真正改善人们日常生活的创新解决方案的渴望。",
+    "skills": "技术技能",
+    "education": "教育背景",
+    "degree": "计算机科学学士学位",
+    "university": "大学名称",
+    "yearRange": "2016 - 2020"
+  },
+  "experience": {
+    "title": "工作经历",
+    "subtitle": "在不同行业构建创新解决方案",
+    "companies": {
+      "ibm": {
+        "title": "React Native 开发工程师",
+        "company": "IBM",
+        "duration": "2023 - 至今",
+        "location": "远程工作",
+        "description": "负责使用React Native开发跨平台移动应用程序，与国际团队协作，为企业客户实施可扩展的解决方案。"
+      },
+      "liansheng": {
+        "title": "前端开发工程师",
+        "company": "联盛腾达电子有限公司",
+        "duration": "2022 - 2023",
+        "location": "深圳，中国",
+        "description": "开发响应式Web应用程序和移动界面，优化用户体验，维护高质量的代码标准。"
+      },
+      "goldsource": {
+        "title": "软件开发工程师",
+        "company": "金源科技有限公司",
+        "duration": "2021 - 2022",
+        "location": "广州，中国",
+        "description": "构建全栈应用程序，集成第三方API，参与从概念到部署的产品开发生命周期。"
+      },
+      "lilt": {
+        "title": "初级开发工程师",
+        "company": "Lilt Inc.",
+        "duration": "2020 - 2021",
+        "location": "旧金山，加州（远程）",
+        "description": "支持翻译和本地化工具的开发，在AI驱动的语言技术方面积累经验，为国际产品开发做出贡献。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "让我们一起合作您的下一个项目",
+    "description": "我总是对新的机会和令人兴奋的项目感兴趣。无论您有问题还是只是想打个招呼，随时联系我！",
+    "emailMe": "发邮件",
+    "viewGithub": "查看 GitHub",
+    "callMe": "打电话"
+  }
+}

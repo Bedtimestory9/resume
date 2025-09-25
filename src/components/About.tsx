@@ -1,7 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+  
   const techStack = [
     "React",
     "React Native", 
@@ -20,7 +23,7 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            About Me
+            {t('about.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
         </div>
@@ -28,13 +31,13 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <Card className="p-8 elegant-shadow smooth-transition hover:glow-shadow">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-primary mb-4">My Journey</h3>
+              <h3 className="text-2xl font-semibold text-primary mb-4">{t('about.subtitle')}</h3>
               <p className="text-muted-foreground leading-relaxed">
-                As a full-stack developer, I love turning inspirations and ideas into reality, making people's daily lives more convenient and easier. I am passionate about programming, and the process of problem-solving and continuous learning is the driving force that keeps me moving forward.
+                {t('about.intro')}
               </p>
 
               <div className="bg-muted/50 p-4 rounded-lg">
-                <h4 className="font-semibold text-foreground mb-2">Education</h4>
+                <h4 className="font-semibold text-foreground mb-2">{t('about.education')}</h4>
                 <p className="text-sm text-muted-foreground">
                   <strong>Guangdong Pharmaceutical University</strong> (2013-2017)
                 </p>
@@ -45,7 +48,7 @@ const About = () => {
           </Card>
 
           <Card className="p-8 elegant-shadow smooth-transition hover:glow-shadow">
-            <h3 className="text-2xl font-semibold text-primary mb-6">Favorite Tech Stack</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-6">{t('about.skills')}</h3>
             <div className="flex flex-wrap gap-3">
               {techStack.map((tech, index) => (
                 <Badge 

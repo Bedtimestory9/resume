@@ -1,15 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Building2 } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation();
+  
   const experiences = [
     {
-      company: "IBM",
-      position: "Full Stack Developer",
-      period: "March 2024 - June 2025",
-      location: "Cathay Pacific Project",
-      description: "Responsible for ensuring front-end features met employees' requirements.",
+      company: t('experience.companies.ibm.company'),
+      position: t('experience.companies.ibm.title'),
+      period: t('experience.companies.ibm.duration'),
+      location: t('experience.companies.ibm.location'),
+      description: t('experience.companies.ibm.description'),
       projects: [
         {
           name: "Flight Scheduling Optimization System",
@@ -31,11 +34,11 @@ const Experience = () => {
       techStack: ["React", "React Native", "Fastify", "MongoDB", "NodeJS", "Material UI", "Python"]
     },
     {
-      company: "Liansheng Tengda Electronics, ltd",
-      position: "Front End Developer", 
-      period: "Sep. 2022 - March 2024",
-      location: "Electronic Components Marketplace",
-      description: "Developed front-end for online electronic components marketplace for an established electronics company transitioning to online business.",
+      company: t('experience.companies.liansheng.company'),
+      position: t('experience.companies.liansheng.title'), 
+      period: t('experience.companies.liansheng.duration'),
+      location: t('experience.companies.liansheng.location'),
+      description: t('experience.companies.liansheng.description'),
       projects: [
         {
           name: "Electronic Components eCommerce Website",
@@ -58,11 +61,11 @@ const Experience = () => {
       techStack: ["React", "React Native", "TypeScript", "ExpressJS", "Docker"]
     },
     {
-      company: "Goldsource Technology",
-      position: "Front End Developer",
-      period: "Sep. 2019 - Sep. 2022", 
-      location: "Electronics Distributor",
-      description: "Responsible for building the company's introduction website and backend systems.",
+      company: t('experience.companies.goldsource.company'),
+      position: t('experience.companies.goldsource.title'),
+      period: t('experience.companies.goldsource.duration'), 
+      location: t('experience.companies.goldsource.location'),
+      description: t('experience.companies.goldsource.description'),
       projects: [
         {
           name: "Company Website & Backend System",
@@ -76,11 +79,11 @@ const Experience = () => {
       techStack: ["jQuery", "JavaScript", "ExpressJS"]
     },
     {
-      company: "Lilt",
-      position: "Translation Project Manager",
-      period: "Sep. 2017 - Aug. 2019",
-      location: "Professional Translation Company",
-      description: "Professional translation company with advanced AI-powered translation tools. Clients included Intel, Amazon, Walmart, etc.",
+      company: t('experience.companies.lilt.company'),
+      position: t('experience.companies.lilt.title'),
+      period: t('experience.companies.lilt.duration'),
+      location: t('experience.companies.lilt.location'),
+      description: t('experience.companies.lilt.description'),
       projects: [
         {
           name: "Translation & Project Management",
@@ -101,7 +104,7 @@ const Experience = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Work Experience
+            {t('experience.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
         </div>

@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "LAWRENCE SU",
+    "title": "Full Stack Developer",
+    "description": "Passionate about turning inspirations into reality, making daily lives more convenient through innovative solutions.",
+    "email": "lawrencefandango@gmail.com",
+    "github": "github.com/Bedtimestory9",
+    "phone": "+86 13112231647",
+    "learnMore": "Learn More About Me",
+    "downloadResume": "Download Resume"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Full Stack Developer & Mobile App Specialist",
+    "intro": "I am a passionate full-stack developer with expertise in React Native and cross-platform mobile development. My journey in software development has been driven by a desire to create innovative solutions that make a real difference in people's daily lives.",
+    "skills": "Technical Skills",
+    "education": "Education",
+    "degree": "Bachelor's Degree in Computer Science",
+    "university": "University Name",
+    "yearRange": "2016 - 2020"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "Building innovative solutions across different industries",
+    "companies": {
+      "ibm": {
+        "title": "React Native Developer",
+        "company": "IBM",
+        "duration": "2023 - Present",
+        "location": "Remote",
+        "description": "Led the development of cross-platform mobile applications using React Native, collaborated with international teams, and implemented scalable solutions for enterprise clients."
+      },
+      "liansheng": {
+        "title": "Frontend Developer",
+        "company": "Liansheng Tengda Electronics Co., Ltd.",
+        "duration": "2022 - 2023",
+        "location": "Shenzhen, China",
+        "description": "Developed responsive web applications and mobile interfaces, optimized user experience, and maintained high-quality code standards."
+      },
+      "goldsource": {
+        "title": "Software Developer",
+        "company": "Goldsource Technology Co., Ltd.",
+        "duration": "2021 - 2022",
+        "location": "Guangzhou, China",
+        "description": "Built full-stack applications, integrated third-party APIs, and contributed to product development lifecycle from concept to deployment."
+      },
+      "lilt": {
+        "title": "Junior Developer",
+        "company": "Lilt Inc.",
+        "duration": "2020 - 2021",
+        "location": "San Francisco, CA (Remote)",
+        "description": "Supported development of translation and localization tools, gained experience in AI-powered language technologies, and contributed to international product development."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together on your next project",
+    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hello, feel free to reach out!",
+    "emailMe": "Email Me",
+    "viewGithub": "View GitHub",
+    "callMe": "Call Me"
+  }
+}

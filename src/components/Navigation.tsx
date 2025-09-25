@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +22,16 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'zh' : 'en';
+    i18n.changeLanguage(newLang);
+  };
+
   const navItems = [
-    { id: "hero", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "experience", label: "Experience" },
-    { id: "contact", label: "Contact" }
+    { id: "hero", label: t('navigation.home') },
+    { id: "about", label: t('navigation.about') },
+    { id: "experience", label: t('navigation.experience') },
+    { id: "contact", label: t('navigation.contact') }
   ];
 
   return (
@@ -53,17 +60,36 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary smooth-transition"
+            >
+              <Globe className="w-4 h-4" />
+              {i18n.language === 'en' ? '中文' : 'EN'}
+            </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </Button>
+          {/* Mobile Menu Button and Language Toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 text-muted-foreground hover:text-primary smooth-transition"
+            >
+              <Globe className="w-4 h-4" />
+              {i18n.language === 'en' ? '中' : 'EN'}
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
