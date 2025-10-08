@@ -1,14 +1,15 @@
 {
   "navigation": {
+    "lawrence_su": "苏淙强",
     "home": "首页",
     "about": "关于",
     "experience": "经历",
     "contact": "联系"
   },
   "hero": {
-    "name": "苏浩然",
+    "name": "苏淙强",
     "title": "全栈开发工程师",
-    "description": "热衷于将灵感转化为现实，通过创新解决方案让日常生活更加便利。",
+    "description": "我热衷于将灵感转化为现实，通过创新解决方案让大家的日常生活更加便利。",
     "email": "lawrencefandango@gmail.com",
     "github": "github.com/Bedtimestory9",
     "phone": "+86 13112231647",
